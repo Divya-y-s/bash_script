@@ -1,1 +1,2 @@
-# bash_scriptThis is my first repo
+# bash_script
+This is my first repo
