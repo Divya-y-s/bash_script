@@ -1,10 +1,10 @@
 #!/bin/bash
-read -p "Enter 3 numbers: " a b c
- if [[ a -gt b && a -gt c ]]; then
+read -p "Enter 3 numbers: " num1 num2 num3
+ if [[ num1 -gt num2 && num1 -gt num3 ]]; then
 	echo "Number $a is greatest"
-elif [[ b -gt a && b -gt c ]]; then
-	echo "Number $b is greatest"
+elif [[ num2 -gt num1 && num2 -gt num3 ]]; then
+	echo "Number $num2 is greatest"
 else
-	echo "Number $c is greatest"
+	echo "Number $num3 is greatest"
 fi
 
