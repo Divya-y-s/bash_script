@@ -1,0 +1,15 @@
+#!/bin/bash
+read -p "Enter username: " username
+read -s -p "Enter password: " password
+echo
+if id "$username" &>/dev/null; then
+	echo "user already exists"
+else
+	sudo useradd -m "$username"
+	echo "$usename:$password" | sudo chpasswd
+	sudo usermod -aG "$username"
+
+	echo "User "$username" created sucessfully"
+	echo "User have sudo acess"
+fi
+
