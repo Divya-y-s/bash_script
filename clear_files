@@ -1,0 +1,7 @@
+#!/bin/bash
+
+Directory="/var/log"
+
+find "$Directory" -type f -mtime +7 -delete
+
+echo "Files older than 7 days deleted from $Directory"
